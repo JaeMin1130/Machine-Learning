@@ -37,7 +37,7 @@ def load_extended_boston():
 
 
 def load_citibike():
-    data_mine = pd.read_csv(os.path.join(DATA_PATH, "citibike.csv"))
+    data_mine = pd.read_csv(r'C:\Users\ija06\OneDrive\바탕 화면\파이썬 라이브러리를 활용한 머신러닝\mglearn\citibike.csv')
     data_mine['one'] = 1
     data_mine['starttime'] = pd.to_datetime(data_mine.starttime)
     data_starttime = data_mine.set_index("starttime")
